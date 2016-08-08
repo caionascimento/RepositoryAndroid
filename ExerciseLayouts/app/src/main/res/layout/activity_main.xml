@@ -44,7 +44,8 @@
         android:id="@+id/relativeCard_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="130dip">
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/topCard_view">
 
         <TextView
             android:layout_width="wrap_content"
@@ -61,7 +62,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="O Relative Layout é o tipo de layout utilizado no Android para se posicionar os elementos em relação a outro."
             android:id="@+id/relativeTextView2"
-            android:layout_marginTop="30dip"/>
+            android:layout_marginTop="30dip"
+            android:layout_below="@+id/relativeTextView"/>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
@@ -70,7 +72,8 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dip">
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/relativeCard_view">
 
         <TextView
             android:layout_width="wrap_content"
@@ -99,7 +102,8 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="460dip">
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/linearCard_view">
 
         <TextView
             android:layout_width="wrap_content"
@@ -128,7 +132,8 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="590dip">
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/tableCard_view">
 
         <TextView
             android:layout_width="wrap_content"
@@ -145,6 +150,36 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Este layout é bastante usado em layouts genéricos, como abas e telas cujo layout muda ao longo de sua execução."
             android:id="@+id/frameTextView2"
+            android:layout_below="@+id/card_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dip"/>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardCard_view"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:layout_below="@+id/frameCard_view">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Card Layout"
+            android:id="@+id/cardTextView"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="O CardLayout é uma classe que ajuda a gerir dois ou mais componentes que compartilham o mesmo espaço de exibição."
+            android:id="@+id/cardTextView2"
             android:layout_below="@+id/card_view"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
