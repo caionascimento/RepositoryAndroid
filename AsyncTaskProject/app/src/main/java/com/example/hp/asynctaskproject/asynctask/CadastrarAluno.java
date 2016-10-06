@@ -6,6 +6,7 @@ import android.util.Log;
 import com.example.hp.asynctaskproject.entidade.Aluno;
 import com.google.gson.Gson;
 
+import java.io.BufferedInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -31,7 +32,7 @@ public class CadastrarAluno extends AsyncTask<Aluno, Void, String> {
             Log.i("MainActivity", alunoJson);
 
             // Conectar com o servidor e enviar os dados.
-            URL url = new URL("http://l");
+            URL url = new URL("http://ladoss.info:8773/Convite_SERVICE/convidado/cadastrar");
             HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
             urlConnection.setRequestMethod("POST");
             urlConnection.setRequestProperty("Content-Type", "application/json");
